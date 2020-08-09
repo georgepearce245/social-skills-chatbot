@@ -1,0 +1,63 @@
+.navbar, html, body {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: white;
+}
+
+.chatbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    background: #f6f6f6;
+    padding: 5px;
+}
+
+.navbar {
+    margin: -5px;
+}
+
+
+input[type=text]:focus {
+    box-shadow: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+ul li {
+    display: inline-block;
+    clear: both;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 2px;
+}
+
+.chatbot-message {
+    background: lightgray;
+    color: #333333;
+    float: left;
+    border-bottom-left-radius: 5px;
+}
+
+.user-message {
+    background: cadetblue;
+    color: white;
+    float: right;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+

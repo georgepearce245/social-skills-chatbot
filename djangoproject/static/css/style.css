@@ -1,0 +1,9 @@
+.container, html, body {
+    height: 100%;
+    background-color: lightgray;
+}
+
+.chatbox {
+    height: 100%;
+    background-color: white;
+}

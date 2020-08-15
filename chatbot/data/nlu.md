@@ -1,23 +1,101 @@
-## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- hey there
-
-## intent:goodbye
-- bye
-- goodbye
-- see you around
-- see you later
-
 ## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
+- I accept
+- I agree
+- I do
+- I guess so
+- I understand
+- I will
+- I would like to
+- I would love to
+- I'd like that
+- I'd like to
+- I'd love to
+- absolutely
+- accept
+- agreed
+- alright
+- alright, cool
+- awesome
+- confirm
 - correct
+- fair enough
+- go ahead
+- go for it
+- hell yeah
+- hell yes
+- indeed
+- it is ok
+- it's ok
+- its ok
+- k
+- let's do it
+- lets do it
+- nice
+- of course
+- oh, ok
+- ok
+- ok I agree
+- ok John
+- ok cool
+- ok fine
+- ok good
+- ok great
+- ok, I understand
+- ok, understood
+- okay
+- please
+- sounds good
+- sure
+- sure thing
+- sweet
+- that is fine
+- that is great
+- that is ok
+- that sounds good
+- that's fine
+- that's great
+- that's ok
+- thats fine
+- thats great
+- thats ok
+- uh-huh
+- understood
+- very much
+- y
+- ya
+- yas
+- ye
+- yea
+- yeah
+- yeah sure
+- yep
+- yep that's fine
+- yep that's ok
+- yes
+- yes I do
+- yes John
+- yes of course
+- yes please
+- yes, I'd like to
+- yup
+
+## intent:compliment
+- i like you
+- i love you
+- love you
+- you are awesome
+- you are cool
+- you are great
+- you are nice
+- you are smart
+- you are very good
+- you are very nice
+- you're awesome
+- you're cool
+- you're great
+- you're nice
+- you're very good
+- you're very nice
 
 ## intent:deny
 - no
@@ -26,6 +104,254 @@
 - don't like that
 - no way
 - not really
+- I don't want to
+- I don't want to say
+- NO
+- nah
+- no thank you
+- no, not really
+- not really
+- nope
+- na
+- nevermind
+- absolute not
+- decline
+- deny
+- I decline
+- I don't like this
+- i dont want to
+- I'm afraid not
+- I'm not sure
+- n
+- nah I'm good
+- no I'm good
+- never
+- no I don't want to
+- no go
+- no I won't
+- no I wont
+- no sorry
+- no thanks
+- no way
+- non
+- no thats wrong
+- no that's wrong
+- not right now
+- not yet
+- thanks but no thanks
+- no stop
+- I don't agree
+
+## intent:dont_understand
+- I don't understand
+- I dont understand
+- I don't know what that is
+- I don't know what that means
+- I'm not sure what you mean
+- don't understand
+- not understood
+- I don't know what you said
+- don't know what that means
+- don't know what this is
+
+## intent:goodbye
+- bye
+- goodbye
+- see you around
+- see you later
+- bye for now
+- bye bye
+- talk to you later
+- see you
+- bye was nice talking to you
+- farewell
+- good bye
+- good night
+- goodnight
+- ok bye
+- see u later
+
+## intent:goodtomeetyou
+- pleased to meet you
+- glad to meet you
+- delighted to meet you
+- pleased to make your acquaintance
+- glad to make your acquaintance
+- delighted to make your acquaintance
+- good to meet you
+- great to meet you
+- I'm glad I met you
+- I am glad I met you
+- I'm happy we've met
+- I am happy we have met
+- I'm thrilled to have met you
+- I'm thrilled to meet you
+- it was nice to have met you
+- it's wonderful to meet you
+- lovely to meet you
+- it's great to get to know you
+- nice to meet you
+- nice to have met you
+- happy to meet you
+- happy to have met you
+
+## intent:goodtoseeyou
+- good to see you
+- good to see you again
+- good to talk to you again
+- great to see you
+- great to see you again
+- great to talk to you again
+- great seeing you
+- glad to see you again
+- glad to talk to you again
+- happy to see you
+
+## intent:greet
+- heya
+- Heya
+- hey
+- Hey
+- HEy
+- hey!
+- hello
+- hello!
+- Hello
+- HELLO
+- hallo
+- Hallo
+- hi
+- hii
+- Hi
+- HI
+- Hi!
+- good morning
+- Good morning!
+- good afternoon
+- Good afternoon!
+- good evening
+- Good evening!
+- hey there
+- Hey there
+- Hey there!
+- hello there
+- Hello there
+- Hello there!
+- hi there
+- Hi there
+- Hi there!
+- greetings
+- Greetings
+- hi john
+- Hi john
+- hello john
+- Hello john
+- hey john
+- Hey john
+- hey John
+- hey John!
+- Hey John
+- hello John
+- Hello John
+- Hello John!
+- hi John
+- Hi John
+- Hi John!
+- good morning John
+- good morning john
+- Good morning John
+- good afternoon john
+- good afternoon John
+- Good afternoon John
+- good evening john
+- good evening John
+- Good evening john
+- greetings john
+- Greetings John
+
+## intent:inform
+- my name is [george](name)
+- I'm called [toby](name)
+- I am called [james smith](name)
+- I'm [Louise](name)
+- my name's [Amelia](name)
+- [Thomas](name)
+- [Mary Robertson](name)
+- call me [Harry](name)
+- my name is [Michael](name)
+- I'm called [Jane](name)
+- I am called [Kelly Williams](name)
+- I'm [Will](name)
+- my name's [Ian](name)
+- [wendy](name)
+- [Marcus Henderson](name)
+- call me [bill](name)
+- my name is [Rita](name)
+- I'm called [Paul](name)
+- I am called [Lucas Armstrong](name)
+- I'm [georgia](name)
+- my name's [sara](name)
+- [zara](name)
+- [Fiona Jacobson](name)
+- call me [John](name)
+- I'm from [Redditch](location)
+- I live in [Birmingham](location)
+- [Warwick](location)
+- [London, England](location)
+- i'm from [Manchester, United Kingdom](location)
+- i live near [derby](location)
+- I'm from near [Nottingham](location)
+- I'm from [Malvern](location) near Worcester
+- [Stratford-upon-Avon](location)
+- [Yorkshire](location)
+- I live in [Broadway](location) in the cotswolds
+- I live in [the cotswolds](location)
+- I' from [Taunton, Somerset](location)
+- i live in [Alcester](location)
+- [Bidford](location)
+- [Bourton-on-the-Water](location)
+- [Chipping Cambden](location)
+- I live in [Chipping Norton](location)
+- I'm from [Astwood Bank](location)
+- I live in [Mappleborough Green, Redditch](location)
+- [Royal Leamington Spa](location)
+
+## intent:insult
+- asshole
+- bitch
+- damn you
+- F u
+- fuck
+- fuck off
+- fuck you
+- get lost
+- go away
+- go fuck yourself
+- go to hell
+- how can you be so stupid
+- how can you be such an idiot
+- idiot
+- I hate you
+- loser
+- moron
+- shut up
+- so dumb
+- so stupid
+- stupid
+- you're a fool
+- you're a moron
+- you're an idiot
+- you're dumb
+- you're foolish
+- you're so stupid
+- you are a fool
+- you are a moron
+- you are an idiot
+- you are dumb
+- you are so stupid
+- you know nothing
+- you lack understanding
+- you suck
 
 ## intent:mood_great
 - perfect
@@ -33,9 +359,23 @@
 - great
 - amazing
 - wonderful
-- I am feeling very good
+- I am feeling good
 - I am great
 - I'm good
+- happy
+- I'm happy
+- I am happy
+- I'm feeling happy
+- good thanks
+- I'm good thanks
+- great thanks
+- good thank you
+- I'm good thank you
+- amazing thanks
+- happy thanks
+- happy thank you
+- ok thanks
+- ok thank you
 
 ## intent:mood_unhappy
 - sad
@@ -48,9 +388,400 @@
 - not very good
 - extremely sad
 - so sad
+- I am sad
+- I'm unhappy
+- I feel sad
+- I am worried
+- I'm worried
+- bored
+- I'm bored
+- not good
+
+## intent:react_positive
+- :)
+- :D
+- cool
+- fun
+- great fun
+- ha ha
+- haha
+- hahaha
+- hehe
+- lol
+- that is cool
+- that is good
+- that is great
+- that's cool
+- that's good
+- that's great
+- this is fun
+- this is great
+- this is nice
+- wow
+
+## intent_react_negative
+- boring
+- dammit
+- damn
+- I don't care
+- not good
+- oh dear
+- oh no
+- shit
+- that's not good
+- that's silly
+- that is not good
+- that is rude
+- that is silly
+- This is bad
+- this is boring
+- this isn't fun
+- this is not fun
+- you are mad
+- you are rude
+
+## intent:thank
+- thanks
+- thank you
+- thanks john
+- thank you so much
+- great, thanks
+- cool, thanks
+- cheers
+- ok thanks
+- thank u
+- thanks a bunch
+- thanks a lot
+- thanks for the help
+- thankyou
+- thnks
+- thnx
+- thx
+- yes thanks
+
+## intent:ask_howdoing
+- are you alright
+- Are you alright
+- Are you alright?
+- are you alright?
+- are you happy
+- Are you happy?
+- are you having a good day
+- are you having a good day?
+- Are you having a good day?
+- Are you having a good day
+- are you having an alright day
+- are you having an alright day?
+- Are you having an alright day
+- Are you having an alright day?
+- are you ok
+- are you ok?
+- Are you ok
+- Are you ok?
+- are you okay
+- are you okay?
+- Are you okay
+- Are you okay?
+- having a good day
+- having a good day?
+- Having a good day
+- Having a good day?
+- how's it going
+- how's it going?
+- How's it going
+- How's it going?
+- how are things
+- how are things?
+- How are things
+- How are things?
+- how are things going
+- how are things going?
+- How are things going
+- How are things going?
+- how are things with you
+- how are things with you?
+- How are things with you
+- How are things with you?
+- how are u
+- how are u?
+- How are you
+- how are you
+- How are you?
+- how are you???
+- how are you doing
+- How are you doing?
+- how are you doing this afternoon?
+- how are you this afternoon
+- how are you doing this evening?
+- how are you this evening
+- how are you doing this morning?
+- how are you this morning
+- how are you feeling
+- how are you feeling?
+- How are you feeling
+- how are you today
+- how are you today?
+- How are you today?
+- how are yuo
+- how have you been
+- How have you been?
+- how is your day
+- How is your day?
+- how was your day
+- How was your day?
+- how you doing
+- how you doing?
+- How you doing?
+- you alright
+- you alright?
+- You alright?
+- you good?
+- You good?
+- is everything ok
+- Is everything ok?
+- what's up
+- What's up?
+- howareyou
+- good thanks, how are you?
+- and you?
+- good thanks, and you?
+- great thanks, and you?
+- good thank you, how are you?
+- good thank you, and you?
+- ok thanks, and you?
+- ok thanks, how are you?
+- ok thank you, how are you?
+- ok thank you, and you?
+
+## intent:greet+ask_howdoing
+- hi, how are you
+- Hi, how are you?
+- hi, how are you today
+- Hi, how are you today?
+- hi, how are you doing?
+- Hi, how are you doing
+- hi, how's it going
+- Hi, how's it going?
+- hi, how you doing
+- hi, how you doing?
+- hi, how are you doing this morning?
+- hi, how are you doing this afternoon?
+- hi, how are you this morning
+- hi, how are you this afternoon
+- hello, how are you
+- Hello, how are you?
+- hello, how are you today
+- Hello, how are you today?
+- hello, how are you doing
+- Hello, how are you doing?
+- hello, how's it going
+- Hello, how's it going?
+- hello, how you doing?
+- Hello, how you doing?
+- hello, how are you doing this morning?
+- hello, how are you this morning
+- hello, how are you doing this afternoon
+- hello, how are you this afternoon?
+- hey, how are you
+- Hey, how are you?
+- Hey, how are you today?
+- hey, how's it going?
+- hey, how you doing?
+- hey, how are you doing?
+- hey, how are you this morning?
+- hey, how are you doing this morning
+- hey, how are you this afternoon?
+- hey, how are you doing this afternoon
+- good morning, how are you?
+- good morning, how are you doing?
+- good morning, how are you today?
+- good morning, how's it going?
+- good afternoon, how are you?
+- good afternoon, how are you doing?
+- good afternoon, how are you today?
+- good afternoon, how's it going?
+- good evening, how are you?
+- good evening, how are you doing?
+- good evening, how are you today?
+- good evening, how's it going?
+- good evening, how's your day been?
+- good evening, how was your day?
+- hi John, how are you
+- Hi John, how are you?
+- hi John, how are you today
+- Hi John, how are you today?
+- hi John, how are you doing?
+- Hi John, how are you doing
+- hi John, how's it going
+- Hi John, how's it going?
+- hi John, how you doing
+- hi John, how you doing?
+- hi John, how are you doing this morning?
+- hi John, how are you doing this afternoon?
+- hi John, how are you this morning
+- hi John, how are you this afternoon
+- hello John, how are you
+- Hello John, how are you?
+- hello John, how are you today
+- Hello John, how are you today?
+- hello John, how are you doing
+- Hello John, how are you doing?
+- hello John, how's it going
+- Hello John, how's it going?
+- hello John, how you doing?
+- Hello John, how you doing?
+- hello John, how are you doing this morning?
+- hello John, how are you this morning
+- hello John, how are you doing this afternoon
+- hello John, how are you this afternoon?
+- hey John, how are you
+- Hey John, how are you?
+- Hey John, how are you today?
+- hey John, how's it going?
+- hey John, how you doing?
+- hey John, how are you doing?
+- hey John, how are you this morning?
+- hey John, how are you doing this morning
+- hey John, how are you this afternoon?
+- hey John, how are you doing this afternoon
+- good morning John, how are you?
+- good morning John, how are you doing?
+- good morning John, how are you today?
+- good morning John, how's it going?
+- good afternoon John, how are you?
+- good afternoon John, how are you doing?
+- good afternoon John, how are you today?
+- good afternoon John, how's it going?
+- good evening John, how are you?
+- good evening John, how are you doing?
+- good evening John, how are you today?
+- good evening John, how's it going?
+- good evening John, how's your day been?
+- good evening John, how was your day?
+
+## intent:ask_whatismyname
+- what is my name?
+- can you tell me my name?
+- do you know my name?
+- do you know what my name is?
+- do you know what I'm called?
+- I have a name, what is it?
+- can you tell me what I am called?
+- say my name
+- tell me my name
+- what am I called?
+- what name do I go by?
+
+## intent:ask_whatispossible
+- can you help me?
+- what can you do?
+- what are you capable of?
+- what is possible?
+- can you help me?
+- what else can you do?
+- can you do anything else?
+- can you explain what you do?
+- what can I do?
+- what can I ask you?
+- what are my options?
+- are there any other options?
+- is there something else I can do?
+- is there something else you can do?
+- now what?
+- more info
+- show me what's possible?
+- what's possible?
+- what next?
+- what are the options?
+- what can I ask?
+- what can I do here?
+- what now?
+- what can you answer?
+- what can you do for me
+- what can you?
+- what do you do?
+- what else can I do?
+- what else can you do?
+- what are you for?
+- what can you teach me?
+
+## intent:ask_whatisyourname
+- what is your name
+- what's your name
+- your name?
+- who are you?
+- u are?
+- you are?
+- what are you called?
+- what name do you go by?
+- what do they call you?
+- what do people call you?
+- who am I talking to?
+- who am I speaking with?
+- who is talking?
+- who is this?
+- who r u?
+- may I know your name
+
+## intent:ask_wherefrom
+- where are you from?
+- are you from around here?
+- where do you come from?
+- what area are you from?
+- what country are you from?
+- what is your birthplace?
+- where from?
+- what's the name of the place you came from?
+- where do you live?
+- where did you come from?
+- where you do consider home?
+- where were you born?
+- where's your home town?
+- what's your home town?
+
+## intent:ask_whereisthat
+- where's that
+- where is that
+- I've not heard of that
+- I don't know where that is
+- I've not heard of there
+- I don't know where
+
+## intent:ask_whoami
+- who am I?
+- can you tell me who I am?
+- do you know you I am?
+- do you know me?
+- tell me who I am
+
+## intent:explain
+- can you elaborate
+- what does that mean?
+- what does this mean?
+- what is
+- can you explain
+- please explain
+- please elaborate
+- explain
+- elaborate
+- why
+- what do you mean
+- what is that?
+- what is this?
+- give me more details
+- give me more information
+- I want more information
+- I want to know why
+- explain it to me
+- explain to me
+- explain that
+- how come?
 
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+
+

@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c7d6064-ebab-403f-b5ee-0f1c8f2f42ec" name="Default Changelist" comment="" />
+    <list default="true" id="0c7d6064-ebab-403f-b5ee-0f1c8f2f42ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/endpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/endpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoproject/webapp/templates/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoproject/webapp/templates/webapp/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1fjSiTxFVloG1imTfBGZIh1RB5i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chatbot/data" />
+      <recent name="$PROJECT_DIR$/chatbot/data/core" />
+      <recent name="$PROJECT_DIR$/chatbot/data/nlu" />
       <recent name="$PROJECT_DIR$/djangoproject/webapp/templates/webapp" />
     </key>
   </component>
@@ -34,7 +56,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596730136003</updated>
-      <workItem from="1596730138705" duration="21300000" />
+      <workItem from="1596730138705" duration="21859000" />
+      <workItem from="1596993743684" duration="6172000" />
+      <workItem from="1597143284745" duration="30990000" />
     </task>
     <servers />
   </component>

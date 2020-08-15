@@ -59,7 +59,7 @@ $(document).ready(function() {
             for (i = 0; i < message.length; i++){
                 if (message[i].hasOwnProperty("text")) {
                     var chatbotMessage = '<li class="card chatbot-message">Chatbot: ' + message[i].text + '</li>';
-                    $(chatbotMessage).appendTo('#messagebox').fadeIn(5000);
+                    $(chatbotMessage).appendTo('#messagebox').fadeIn(2000);
                 }
             }
             scrollToBottom();

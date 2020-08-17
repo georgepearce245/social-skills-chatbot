@@ -78,6 +78,7 @@
 - yes please
 - yes, I'd like to
 - yup
+- Ah that's nice
 
 ## intent:compliment
 - i like you
@@ -110,7 +111,6 @@
 - nah
 - no thank you
 - no, not really
-- not really
 - nope
 - na
 - nevermind
@@ -125,14 +125,12 @@
 - n
 - nah I'm good
 - no I'm good
-- never
 - no I don't want to
 - no go
 - no I won't
 - no I wont
 - no sorry
 - no thanks
-- no way
 - non
 - no thats wrong
 - no that's wrong
@@ -170,6 +168,8 @@
 - goodnight
 - ok bye
 - see u later
+- Talk to you again soon
+- Bye
 
 ## intent:goodtomeetyou
 - pleased to meet you
@@ -206,6 +206,7 @@
 - glad to see you again
 - glad to talk to you again
 - happy to see you
+- Nice to talk to you today John!
 
 ## intent:greet
 - heya
@@ -315,6 +316,8 @@
 - I'm from [Astwood Bank](location)
 - I live in [Mappleborough Green, Redditch](location)
 - [Royal Leamington Spa](location)
+- My name is [George](name)
+- I was born in [Redditch, Worcestershire](location)
 
 ## intent:insult
 - asshole
@@ -418,8 +421,6 @@
 - this is great
 - this is nice
 - wow
-
-## intent_react_negative
 - boring
 - dammit
 - damn
@@ -552,6 +553,8 @@
 - ok thanks, how are you?
 - ok thank you, how are you?
 - ok thank you, and you?
+- I'm good thanks, how are you?
+- I'm good thanks, how are you
 
 ## intent:greet+ask_howdoing
 - hi, how are you
@@ -677,7 +680,6 @@
 - what can you do?
 - what are you capable of?
 - what is possible?
-- can you help me?
 - what else can you do?
 - can you do anything else?
 - can you explain what you do?
@@ -701,12 +703,12 @@
 - what can you?
 - what do you do?
 - what else can I do?
-- what else can you do?
 - what are you for?
 - what can you teach me?
 
 ## intent:ask_whatisyourname
 - what is your name
+- what is your name?
 - what's your name
 - your name?
 - who are you?
@@ -722,6 +724,7 @@
 - who is this?
 - who r u?
 - may I know your name
+- Good! What's your name?
 
 ## intent:ask_wherefrom
 - where are you from?
@@ -738,6 +741,7 @@
 - where were you born?
 - where's your home town?
 - what's your home town?
+- Where are you from?
 
 ## intent:ask_whereisthat
 - where's that
@@ -782,6 +786,4 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
-
-
-
+- I'm good thanks. How are you?

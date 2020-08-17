@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c7d6064-ebab-403f-b5ee-0f1c8f2f42ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/endpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/endpoints.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoproject/webapp/templates/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoproject/webapp/templates/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <updated>1596730136003</updated>
       <workItem from="1596730138705" duration="21859000" />
       <workItem from="1596993743684" duration="6172000" />
-      <workItem from="1597143284745" duration="30990000" />
+      <workItem from="1597143284745" duration="47588000" />
     </task>
     <servers />
   </component>
@@ -66,9 +63,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1370" y="-1047" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597681215860">
+      <screen x="-674" y="-1417" width="3440" height="1417" />
+    </state>
+    <state x="1370" y="-1047" key="#com.intellij.execution.impl.EditConfigurationsDialog/-674.-1417.3440.1417/0.23.2048.1257@-674.-1417.3440.1417" timestamp="1597681215860" />
     <state x="1037" y="290" key="SettingsEditor" timestamp="1596808498981">
       <screen x="0" y="23" width="2048" height="1257" />
     </state>
     <state x="1037" y="290" key="SettingsEditor/0.23.2048.1257@0.23.2048.1257" timestamp="1596808498981" />
+    <state x="1571" y="-1092" width="670" height="676" key="search.everywhere.popup" timestamp="1597682479139">
+      <screen x="-674" y="-1417" width="3440" height="1417" />
+    </state>
+    <state x="1571" y="-1092" width="670" height="676" key="search.everywhere.popup/-674.-1417.3440.1417/0.23.2048.1257@-674.-1417.3440.1417" timestamp="1597682479139" />
   </component>
 </project>

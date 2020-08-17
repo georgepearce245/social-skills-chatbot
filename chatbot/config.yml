@@ -10,7 +10,6 @@ pipeline:
     intent_split_symbol: "+"
   - name: SpacyFeaturizer
   - name: RegexFeaturizer
-  - name: "SpacyEntityExtractor"
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer

@@ -1,4 +1,30 @@
 
+## interaction EP1_1
+* interaction
+  - action_interaction
+  - slot{"EP1_1": 5}
+  
+## no interaction EP1_1
+* no_interaction
+  - action_no_interaction
+  - slot{"EP1_1": 0}
+
+## slow interaction EP1_1
+* slow_interaction
+  - action_slow_interaction
+  - slot{"EP1_1": 3}
+  
+## intitiation EP1_2
+* initiation
+  - action_initiation
+  - slot{"EP1_2": 5}
+  
+## no intitiation EP1_2
+* no_initiation
+  - action_no_initiation
+  - slot{"EP1_2": 0}
+  - action_utter_greet
+
 ## ask what is my name
 * ask_whatismyname
   - action_utter_user_name
@@ -25,7 +51,7 @@
 
 ## say goodbye
 * goodbye
-  - utter_goodbye
+  - action_goodbye
   
 ## good to meet you
 * goodtomeetyou
@@ -364,3 +390,31 @@
   - utter_did_that_help
 * deny
   - utter_sorry_no_help
+
+## interactive_story_1
+* greet
+    - action_utter_greet
+    - utter_ask_howdoing
+* ask_howdoing
+    - utter_answer_howdoing
+* ask_whatisyourname
+    - utter_answer_whatisyourname
+    - action_ask_whatisyourname
+* inform{"PERSON": "George", "name": "George"}
+    - slot{"name": "George"}
+    - action_utter_goodtomeetyou
+    - utter_ask_wherefrom
+* inform{"GPE": "Redditch", "ORG": "Worcestershire", "location": "Redditch, Worcestershire"}
+    - slot{"location": "Redditch, Worcestershire"}
+    - utter_happy
+* ask_wherefrom
+    - utter_answer_wherefrom
+* ask_whereisthat
+    - utter_answer_whereisthat
+* affirm
+    - utter_happy
+* goodtoseeyou{"DATE": "today", "PERSON": "John"}
+    - utter_goodtoseeyou
+* goodbye
+    - action_goodbye
+* goodbye

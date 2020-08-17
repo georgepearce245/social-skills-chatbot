@@ -1,145 +1,157 @@
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
-
-intents:
-  - affirm
-  - ask_howdoing
-  - ask_whatismyname
-  - ask_whatispossible
-  - ask_whatisyourname
-  - ask_wherefrom
-  - ask_whereisthat
-  - ask_whoami
-  - bot_challenge
-  - compliment
-  - deny
-  - dont_understand
-  - goodbye
-  - goodtomeetyou
-  - goodtoseeyou
-  - greet
-  - greet+ask_howdoing
-  - inform:
-      use_entities: []
-  - insult: {triggers: utter_respond_insult}
-  - mood_great
-  - mood_unhappy
-  - react_positive
-  - react_negative
-  - thank
-
+actions:
+- action_ask_whatisyourname
+- action_goodbye
+- action_initiation
+- action_interaction
+- action_no_initiation
+- action_no_interaction
+- action_skills_breakdown
+- action_slow_interaction
+- action_utter_goodtomeetyou
+- action_utter_greet
+- action_utter_user_name
+- utter_answer_howdoing
+- utter_answer_whatismyname
+- utter_answer_whatispossible
+- utter_answer_whatisyourname
+- utter_answer_wherefrom
+- utter_answer_whereisthat
+- utter_answer_whoami
+- utter_ask_howdoing
+- utter_ask_whatisthatlike
+- utter_ask_wherefrom
+- utter_cannot_help
+- utter_chatbot
+- utter_cheer_up
+- utter_default
+- utter_did_that_help
+- utter_dont_understand
+- utter_explain
+- utter_goodtoseeyou
+- utter_happy
+- utter_notpossible
+- utter_respond_insult
+- utter_sorry_no_help
+- utter_youre_welcome
 entities:
-  - name
-  - location
-
+- location
+- name
+intents:
+- inform:
+    use_entities: []
+- ask_howdoing
+- greet
+- ask_whereisthat
+- goodbye
+- goodtoseeyou
+- ask_wherefrom
+- affirm
+- ask_whatisyourname
+- ask_whatismyname
+- ask_whatispossible
+- ask_whoami
+- bot_challenge
+- compliment
+- deny
+- dont_understand
+- goodtomeetyou
+- greet+ask_howdoing
+- initiation
+- interaction
+- insult:
+    triggers: utter_respond_insult
+- mood_great
+- mood_unhappy
+- no_initiation
+- no_interaction
+- react_positive
+- react_negative
+- skills_breakdown:
+    triggers: action_skills_breakdown
+- slow_interaction
+- thank
+responses:
+  utter_answer_howdoing:
+  - text: I'm good thank you
+  - text: I'm great thanks
+  - text: I'm excellent, thanks for asking
+  - text: I'm doing well thank you
+  utter_answer_whatismyname:
+  - text: Your name is ...
+  utter_answer_whatispossible:
+  - text: I can do ...
+  utter_answer_whatisyourname:
+  - text: My name is John
+  utter_answer_wherefrom:
+  - text: I'm from Coventry, England
+  utter_answer_whereisthat:
+  - text: Coventry is a large city in Warwickshire in the West Midlands
+  utter_answer_whoami:
+  - text: You are {name} from {location}
+  utter_ask_howdoing:
+  - text: How are you?
+  - text: How are you today?
+  - text: How are you doing?
+  - text: How are you doing today?
+  utter_ask_whatisthatlike:
+  - text: What is that like?
+  utter_ask_wherefrom:
+  - text: Where are you from?
+  - text: Where do you live?
+  - text: Where were you born?
+  utter_cannot_help:
+  - text: I can't help you with that I'm afraid
+  utter_chatbot:
+  - text: I am a chatbot
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_default:
+  - text: Sorry I didn't understand that. Would you mind rephrasing it?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_dont_understand:
+  - text: I'm sorry, I didn't understand that. Would you mind rephrasing it?
+  utter_explain:
+  - text: This is an explanation
+  utter_goodtoseeyou:
+  - text: It's great to see you
+  - text: It's great to talk to you
+  utter_happy:
+  - text: Great, carry on!
+  - text: That's great!
+  - text: That's nice!
+  - text: Fantastic!
+  - text: Great!
+  - text: Excellent
+  - text: Oh how lovely!
+  - text: Very nice!
+  utter_notpossible:
+  - text: I can't do that I'm afraid
+  utter_respond_insult:
+  - text: That's not very nice
+  - text: That was rather unkind
+  utter_sorry_no_help:
+  - text: Sorry I couldn't help you!
+  - text: I'm sorry I couldn't be of any help
+  utter_youre_welcome:
+  - text: You're welcome!
+  - text: You're very welcome!
+  - text: You're welcome! I'm always happy to help
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
 slots:
-  name:
-    type: unfeaturized
   location:
     type: unfeaturized
-
-actions:
-  - action_utter_greet
-  - action_utter_user_name
-  - action_utter_goodtomeetyou
-  - action_ask_whatisyourname
-
-responses:
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_ask_howdoing:
-  - text: "How are you?"
-  - text: "How are you today?"
-  - text: "How are you doing?"
-  - text: "How are you doing today?"
-
-  utter_answer_howdoing:
-  - text: "I'm good thank you"
-  - text: "I'm great thanks"
-  - text: "I'm excellent, thanks for asking"
-  - text: "I'm doing well thank you"
-
-  utter_answer_whatismyname:
-  - text: "Your name is ..."
-
-  utter_answer_whatispossible:
-  - text: "I can do ..."
-
-  utter_ask_whatisthatlike:
-    - text: "What is that like?"
-
-  utter_answer_whatisyourname:
-  - text: "My name is John"
-
-  utter_ask_wherefrom:
-    - text: "Where are you from?"
-    - text: "Where do you live?"
-    - text: "Where were you born?"
-
-  utter_answer_wherefrom:
-    - text: "I'm from Coventry, England"
-
-  utter_answer_whereisthat:
-  - text: "Coventry is a large city in Warwickshire in the West Midlands"
-
-  utter_answer_whoami:
-    - text: "You are {name} from {location}"
-
-  utter_chatbot:
-    - text: "I am a chatbot"
-
-  utter_explain:
-    - text: "This is an explanation"
-
-  utter_default:
-    - text: "Sorry I didn't understand that. Would you mind rephrasing it?"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-  - text: "That's great!"
-  - text: "That's nice!"
-  - text: "Fantastic!"
-  - text: "Great!"
-  - text: "Excellent"
-  - text: "Oh how lovely!"
-  - text: "Very nice!"
-
-  utter_goodbye:
-  - text: "Goodbye"
-  - text: "Goodbye! Nice talking to you"
-  - text: "See you soon!"
-  - text: "Bye!"
-  - text: "Talk to you soon! Bye"
-
-  utter_goodtoseeyou:
-  - text: "It's great to see you"
-  - text: "It's great to talk to you"
-
-  utter_respond_insult:
-  - text: "That's not very nice"
-  - text: "That was rather unkind"
-
-  utter_dont_understand:
-  - text: "I'm sorry, I didn't understand that. Would you mind rephrasing it?"
-
-  utter_cannot_help:
-  - text: "I can't help you with that I'm afraid"
-
-  utter_notpossible:
-  - text: "I can't do that I'm afraid"
-
-  utter_sorry_no_help:
-    - text: "Sorry I couldn't help you!"
-    - text: "I'm sorry I couldn't be of any help"
-
-  utter_youre_welcome:
-  - text: "You're welcome!"
-  - text: "You're very welcome!"
-  - text: "You're welcome! I'm always happy to help"
+  name:
+    type: unfeaturized
+  EP1_1: # interaction 0-5
+    type: unfeaturized
+    initial_value: 3.0
+  EP1_2: # initiation 0-5
+    type: unfeaturized
+    initial_value: 3.0
+  EP2_1: # hello 0-5
+    type: unfeaturized
+    initial_value: 3.0

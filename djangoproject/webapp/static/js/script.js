@@ -1,6 +1,18 @@
 $(document).ready(function() {
     scrollToBottom();
 
+    var initiated = false
+    var no_initiation = setTimeout(function() {
+        sendToRasa('/no_initiation');
+        initiated = true;}, 15000);
+    $('.input').keypress(function() {
+        if (!initiated) {
+            clearTimeout(no_initiation);
+            sendToRasa(('/initiation'));
+            initiated = true;
+        }
+    })
+
     // On user input 'send' clicked
     $('.send').click(function() {
        var message = $('.input').val();
@@ -58,11 +70,22 @@ $(document).ready(function() {
         } else {
             for (i = 0; i < message.length; i++){
                 if (message[i].hasOwnProperty("text")) {
-                    var chatbotMessage = '<li class="card chatbot-message">Chatbot: ' + message[i].text + '</li>';
+                    var chatbotMessage = '<li class="card chatbot-message">' + message[i].text + '</li>';
                     $(chatbotMessage).appendTo('#messagebox').fadeIn(2000);
                 }
             }
             scrollToBottom();
+            var slow_interaction = setTimeout(function() {sendToRasa('/slow_interaction')}, 15000);
+            var no_interaction = setTimeout(function() {sendToRasa('/no_interaction')}, 60000);
+            var interacted = false;
+            $('.input').keypress(function() {
+                if (!interacted) {
+                    clearTimeout(slow_interaction);
+                    clearTimeout(no_interaction);
+                    sendToRasa(('/interaction'));
+                    interacted = true;
+                }
+            })
         }
     }
 

@@ -151,6 +151,7 @@
 - I don't know what you said
 - don't know what that means
 - don't know what this is
+- I don't know what to say now
 
 ## intent:goodbye
 - bye
@@ -318,6 +319,7 @@
 - [Royal Leamington Spa](location)
 - My name is [George](name)
 - I was born in [Redditch, Worcestershire](location)
+- [George](name)
 
 ## intent:insult
 - asshole
@@ -421,6 +423,8 @@
 - this is great
 - this is nice
 - wow
+
+## intent:react_negative
 - boring
 - dammit
 - damn
@@ -555,6 +559,7 @@
 - ok thank you, and you?
 - I'm good thanks, how are you?
 - I'm good thanks, how are you
+- I'm great thanks, and you?
 
 ## intent:greet+ask_howdoing
 - hi, how are you

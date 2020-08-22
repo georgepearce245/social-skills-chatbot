@@ -4,10 +4,10 @@
     <list default="true" id="0c7d6064-ebab-403f-b5ee-0f1c8f2f42ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,9 @@
       <updated>1596730136003</updated>
       <workItem from="1596730138705" duration="21859000" />
       <workItem from="1596993743684" duration="6172000" />
-      <workItem from="1597143284745" duration="47588000" />
+      <workItem from="1597143284745" duration="47731000" />
+      <workItem from="1597833109958" duration="1169000" />
+      <workItem from="1597847379379" duration="19085000" />
     </task>
     <servers />
   </component>

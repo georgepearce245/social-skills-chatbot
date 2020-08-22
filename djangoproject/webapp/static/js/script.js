@@ -42,23 +42,25 @@ $(document).ready(function() {
 
     // Send input to Rasa, receive chatbot response and post that in the chat
     function sendToRasa(message) {
-        console.log("User Message: ", message);
-        $.ajax({
-            url: 'http://localhost:5005/webhooks/rest/webhook',
-            type: 'POST',
-            data: JSON.stringify({
-                "message": message,
-                "sender": "user"
-            }),
-            success: function(message, status) {
-                postChatbotMessage(message);
-                console.log('Rasa Response: ' + message + '\n Status: ' + status);
-            },
-            error: function(errorMessage) {
-                postChatbotMessage("");
-                console.log('Error: ' + errorMessage);
-            }
-        });
+        setTimeout(function() {
+            console.log("User Message: ", message);
+            $.ajax({
+                url: 'http://localhost:5005/webhooks/rest/webhook',
+                type: 'POST',
+                data: JSON.stringify({
+                    "message": message,
+                    "sender": "user"
+                }),
+                success: function(message, status) {
+                    postChatbotMessage(message);
+                    console.log('Rasa Response: ' + message + '\n Status: ' + status);
+                },
+                error: function(errorMessage) {
+                    postChatbotMessage("");
+                    console.log('Error: ' + errorMessage);
+                }
+            });
+        }, 500);
     }
 
 
@@ -71,12 +73,12 @@ $(document).ready(function() {
             for (i = 0; i < message.length; i++){
                 if (message[i].hasOwnProperty("text")) {
                     var chatbotMessage = '<li class="card chatbot-message">' + message[i].text + '</li>';
-                    $(chatbotMessage).appendTo('#messagebox').fadeIn(2000);
+                    $(chatbotMessage).appendTo('#messagebox').hide().fadeIn(100);
                 }
             }
             scrollToBottom();
-            var slow_interaction = setTimeout(function() {sendToRasa('/slow_interaction')}, 15000);
-            var no_interaction = setTimeout(function() {sendToRasa('/no_interaction')}, 60000);
+            var slow_interaction = setTimeout(function() {sendToRasa('/slow_interaction')}, 12000);
+            var no_interaction = setTimeout(function() {sendToRasa('/no_interaction')}, 30000);
             var interacted = false;
             $('.input').keypress(function() {
                 if (!interacted) {

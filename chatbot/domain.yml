@@ -1,4 +1,13 @@
 actions:
+- action_answer_bot_challenge
+- action_answer_explain
+- action_answer_howdoing
+- action_answer_whatismyname
+- action_answer_whatispossible
+- action_answer_whatisyourname
+- action_answer_wherefrom
+- action_answer_whereisthat
+- action_answer_whoami
 - action_ask_whatisyourname
 - action_goodbye
 - action_initiation
@@ -7,16 +16,21 @@ actions:
 - action_no_interaction
 - action_skills_breakdown
 - action_slow_interaction
+- action_user_affirm
+- action_user_deny
+- action_user_inform
+- action_user_mood_great
+- action_user_mood_unhappy
+- action_user_react_negative
+- action_user_react_positive
 - action_utter_goodtomeetyou
 - action_utter_greet
-- action_utter_user_name
+- utter_answer_explain
 - utter_answer_howdoing
-- utter_answer_whatismyname
 - utter_answer_whatispossible
 - utter_answer_whatisyourname
 - utter_answer_wherefrom
 - utter_answer_whereisthat
-- utter_answer_whoami
 - utter_ask_howdoing
 - utter_ask_whatisthatlike
 - utter_ask_wherefrom
@@ -26,8 +40,9 @@ actions:
 - utter_default
 - utter_did_that_help
 - utter_dont_understand
-- utter_explain
+- utter_goodbye
 - utter_goodtoseeyou
+- utter_greet
 - utter_happy
 - utter_notpossible
 - utter_respond_insult
@@ -37,12 +52,13 @@ entities:
 - location
 - name
 intents:
+- goodbye
+- ask_howdoing
+- dont_understand
+- greet
 - inform:
     use_entities: []
-- ask_howdoing
-- greet
 - ask_whereisthat
-- goodbye
 - goodtoseeyou
 - ask_wherefrom
 - affirm
@@ -53,7 +69,7 @@ intents:
 - bot_challenge
 - compliment
 - deny
-- dont_understand
+- explain
 - goodtomeetyou
 - greet+ask_howdoing
 - initiation
@@ -71,13 +87,13 @@ intents:
 - slow_interaction
 - thank
 responses:
+  utter_answer_explain:
+  - text: This is an explanation
   utter_answer_howdoing:
   - text: I'm good thank you
   - text: I'm great thanks
   - text: I'm excellent, thanks for asking
   - text: I'm doing well thank you
-  utter_answer_whatismyname:
-  - text: Your name is ...
   utter_answer_whatispossible:
   - text: I can do ...
   utter_answer_whatisyourname:
@@ -86,13 +102,10 @@ responses:
   - text: I'm from Coventry, England
   utter_answer_whereisthat:
   - text: Coventry is a large city in Warwickshire in the West Midlands
-  utter_answer_whoami:
-  - text: You are {name} from {location}
   utter_ask_howdoing:
   - text: How are you?
   - text: How are you today?
   - text: How are you doing?
-  - text: How are you doing today?
   utter_ask_whatisthatlike:
   - text: What is that like?
   utter_ask_wherefrom:
@@ -112,11 +125,19 @@ responses:
   - text: Did that help you?
   utter_dont_understand:
   - text: I'm sorry, I didn't understand that. Would you mind rephrasing it?
-  utter_explain:
-  - text: This is an explanation
+  utter_goodbye:
+  - text: Goodbye
+  - text: Goodbye! Nice talking to you
+  - text: See you soon!
+  - text: Bye!
+  - text: Talk to you soon! Bye
   utter_goodtoseeyou:
   - text: It's great to see you
   - text: It's great to talk to you
+  utter_greet:
+  - text: Hi!
+  - text: Hello
+  - text: Hey!
   utter_happy:
   - text: Great, carry on!
   - text: That's great!
@@ -142,16 +163,25 @@ session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
 slots:
+  EP1_1: # interaction
+    initial_value: 3.0
+    type: unfeaturized
+  EP1_2: # initiation
+    initial_value: 3.0
+    type: unfeaturized
+  EP2_1: # hello
+    initial_value: 3.0
+    type: unfeaturized
+  EP2_2: # give name
+    initial_value: 0.0
+    type: unfeaturized
+  EP3_1: # ask questions
+    initial_value: 2.0
+    type: unfeaturized
+  EP3_3: # answer questions
+    initial_value: 2.0
+    type: unfeaturized
   location:
     type: unfeaturized
   name:
     type: unfeaturized
-  EP1_1: # interaction 0-5
-    type: unfeaturized
-    initial_value: 3.0
-  EP1_2: # initiation 0-5
-    type: unfeaturized
-    initial_value: 3.0
-  EP2_1: # hello 0-5
-    type: unfeaturized
-    initial_value: 3.0

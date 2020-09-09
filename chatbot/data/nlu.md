@@ -320,6 +320,8 @@
 - My name is [George](name)
 - I was born in [Redditch, Worcestershire](location)
 - [George](name)
+- [george](name)
+- [redditch](location)
 
 ## intent:insult
 - asshole
@@ -560,6 +562,7 @@
 - I'm good thanks, how are you?
 - I'm good thanks, how are you
 - I'm great thanks, and you?
+- good, you
 
 ## intent:greet+ask_howdoing
 - hi, how are you
@@ -785,6 +788,7 @@
 - explain to me
 - explain that
 - how come?
+- What?
 
 ## intent:bot_challenge
 - are you a bot?

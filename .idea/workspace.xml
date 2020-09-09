@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/chatbot/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/djangoproject/webapp/static/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,8 @@
       <workItem from="1597143284745" duration="47731000" />
       <workItem from="1597833109958" duration="1169000" />
       <workItem from="1597847379379" duration="19085000" />
+      <workItem from="1598275789771" duration="3621000" />
+      <workItem from="1599395016257" duration="19396000" />
     </task>
     <servers />
   </component>
@@ -65,10 +66,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1370" y="-1047" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597681215860">
+    <state x="1370" y="-1047" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599414183717">
       <screen x="-674" y="-1417" width="3440" height="1417" />
     </state>
-    <state x="1370" y="-1047" key="#com.intellij.execution.impl.EditConfigurationsDialog/-674.-1417.3440.1417/0.23.2048.1257@-674.-1417.3440.1417" timestamp="1597681215860" />
+    <state x="1370" y="-1047" key="#com.intellij.execution.impl.EditConfigurationsDialog/-674.-1417.3440.1417/0.23.2048.1257@-674.-1417.3440.1417" timestamp="1599414183717" />
     <state x="1037" y="290" key="SettingsEditor" timestamp="1596808498981">
       <screen x="0" y="23" width="2048" height="1257" />
     </state>

@@ -27,7 +27,6 @@ actions:
 - action_utter_greet
 - utter_answer_explain
 - utter_answer_howdoing
-- utter_answer_whatispossible
 - utter_answer_whatisyourname
 - utter_answer_wherefrom
 - utter_answer_whereisthat
@@ -40,6 +39,7 @@ actions:
 - utter_default
 - utter_did_that_help
 - utter_dont_understand
+- utter_doyouhaveaquestion
 - utter_goodbye
 - utter_goodtoseeyou
 - utter_greet
@@ -52,24 +52,24 @@ entities:
 - location
 - name
 intents:
-- goodbye
-- ask_howdoing
-- dont_understand
-- greet
 - inform:
     use_entities: []
+- ask_howdoing
+- explain
+- ask_whatisyourname
+- greet
+- affirm
+- goodbye
+- dont_understand
 - ask_whereisthat
 - goodtoseeyou
 - ask_wherefrom
-- affirm
-- ask_whatisyourname
 - ask_whatismyname
 - ask_whatispossible
 - ask_whoami
 - bot_challenge
 - compliment
 - deny
-- explain
 - goodtomeetyou
 - greet+ask_howdoing
 - initiation
@@ -90,16 +90,14 @@ responses:
   utter_answer_explain:
   - text: This is an explanation
   utter_answer_howdoing:
-  - text: I'm good thank you
-  - text: I'm great thanks
+  - text: I'm good, thank you for asking
+  - text: I'm great, thanks for asking
   - text: I'm excellent, thanks for asking
-  - text: I'm doing well thank you
-  utter_answer_whatispossible:
-  - text: I can do ...
+  - text: I'm doing well, thank you for asking
   utter_answer_whatisyourname:
-  - text: My name is John
+  - text: My name is John. Thank you for asking!
   utter_answer_wherefrom:
-  - text: I'm from Coventry, England
+  - text: I'm from Coventry, England. Thank you for asking!
   utter_answer_whereisthat:
   - text: Coventry is a large city in Warwickshire in the West Midlands
   utter_ask_howdoing:
@@ -125,6 +123,10 @@ responses:
   - text: Did that help you?
   utter_dont_understand:
   - text: I'm sorry, I didn't understand that. Would you mind rephrasing it?
+  utter_doyouhaveaquestion:
+  - text: Do you have any questions you'd like to ask me?
+  - text: Is there anything you'd like to ask me?
+  - text: Have you got any questions for me?
   utter_goodbye:
   - text: Goodbye
   - text: Goodbye! Nice talking to you
@@ -163,22 +165,22 @@ session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
 slots:
-  EP1_1: # interaction
+  EP1_1:
     initial_value: 3.0
     type: unfeaturized
-  EP1_2: # initiation
+  EP1_2:
     initial_value: 3.0
     type: unfeaturized
-  EP2_1: # hello
+  EP2_1:
     initial_value: 3.0
     type: unfeaturized
-  EP2_2: # give name
+  EP2_2:
     initial_value: 0.0
     type: unfeaturized
-  EP3_1: # ask questions
+  EP3_1:
     initial_value: 2.0
     type: unfeaturized
-  EP3_3: # answer questions
+  EP3_3:
     initial_value: 2.0
     type: unfeaturized
   location:

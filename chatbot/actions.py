@@ -18,8 +18,22 @@ from rasa_sdk.events import SlotSet
 
 in_session = False
 first_interaction = True
+greeting = False
 question_asked = False
 question_answered = False
+
+
+def pick_game(tracker):
+    eps = tracker.current_slot_values()
+
+    game = "Here's a fun story you can follow along with: https://starautismsupport.com/sites/default/files/STAR%20-%20Social%20Script%20-%20Sharing%20and%20Turn%20Taking_08.29.18.pdf"
+
+    if eps.get('EP1_1') < 3 or eps.get('EP1_2') < 3:
+        game = "Here's some fun phrases you can use: https://drive.google.com/file/d/0B86bxhFxYKGzWjlSdWhzVnBpSWc/view"
+    elif eps.get('EP2_1') < 3 or eps.get('EP2_2') < 3:
+        game = "Here's some fun phrases you can use: https://drive.google.com/file/d/0B86bxhFxYKGzTWpoQXFBUnJsaW8/view"
+
+    return game
 
 
 class ActionSkillsBreakdown(Action):
@@ -31,13 +45,14 @@ class ActionSkillsBreakdown(Action):
         global in_session
         in_session = False
 
+        skill_values = ['Very Low', 'Low', 'Medium', 'High', 'Very High', 'Excellent']
+
         eps = tracker.current_slot_values()
         eps.pop('name', None)
         eps.pop('location', None)
 
-        skill_values = ['Very Low', 'Low', 'Medium', 'High', 'Very High', 'Excellent']
-
-        ordered_skills = [f"{key}: Skill Value = {value}" for key, value in sorted(eps.items(), key=lambda item: item[1])]
+        ordered_skills = [f"{key}: Skill Value = {value}" for key, value in
+                          sorted(eps.items(), key=lambda item: item[1])]
         ordered_skills = '\n\n'.join(ordered_skills)
 
         dispatcher.utter_message(f"EP1.1 - Interaction: Skill Level = {skill_values[math.floor(eps.get('EP1_1'))]}\n\n"
@@ -56,9 +71,7 @@ class ActionUtterGreet(Action):
     def name(self) -> Text:
         return "action_utter_greet"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher, tracker, domain):
 
         global in_session
         in_session = True
@@ -71,12 +84,11 @@ class ActionUtterGreet(Action):
             dispatcher.utter_message(template="utter_greet")
 
         ep2_1 = tracker.get_slot("EP2_1")
-        if tracker.latest_message['intent'].get('name') != 'no_initiation':
+        if tracker.latest_message['intent'].get('name') == 'greet':
             if ep2_1 < 5:
                 ep2_1 += 1
-        else:
-            if ep2_1 > 5:
-                ep2_1 -= 0.5
+            global greeting
+            greeting = True
 
         return [SlotSet("EP2_1", ep2_1)]
 
@@ -117,6 +129,20 @@ class ActionGoodbye(Action):
 
         question_answered = False
 
+        # decrease EP2.1 if the user hasn't greeted the chatbot appropriately
+        ep2_1 = tracker.get_slot("EP2_1")
+
+        global greeting
+        if not greeting:
+            if ep2_1 > 1:
+                ep2_1 -= 1.5
+            elif ep2_1 > 0.5:
+                ep2_1 -= 1
+            elif ep2_1 > 0:
+                ep2_1 -= 0.5
+
+        greeting = False
+
         # decrease EP2.2 if name hasn't been given in the first interaction
         ep2_2 = tracker.get_slot("EP2_2")
 
@@ -130,7 +156,7 @@ class ActionGoodbye(Action):
 
         first_interaction = False
 
-        return [SlotSet("EP3_1", ep3_1), SlotSet("EP3_3", ep3_3), SlotSet("EP2_2", ep2_2)]
+        return [SlotSet("EP3_1", ep3_1), SlotSet("EP3_3", ep3_3), SlotSet("EP2_1", ep2_1), SlotSet("EP2_2", ep2_2)]
 
 
 class ActionUtterGoodToMeetYou(Action):
@@ -196,16 +222,24 @@ class ActionNoInteraction(Action):
 
     def run(self, dispatcher, tracker, domain):
         ep1_1 = tracker.get_slot("EP1_1")
+        ep3_3 = tracker.get_slot("EP3_3")
 
+        global in_session
         if in_session:
             if ep1_1 > 0:
                 ep1_1 -= 1
 
-        ep3_3 = tracker.get_slot("EP3_3")
+            if re.search("[?]", tracker.get_last_event_for('bot')['text']) is not None:
+                if ep3_3 > 0:
+                    ep3_3 -= 0.5
+                dispatcher.utter_message("Did you understand me ok?")
+            elif not question_asked:
+                dispatcher.utter_message(template="utter_doyouhaveaquestion")
+            else:
+                dispatcher.utter_message("Would you like to play something?")
+                dispatcher.utter_message(pick_game(tracker))
 
-        if re.search("[?]", tracker.get_last_event_for('bot')['text']) is not None:
-            if ep3_3 > 0:
-                ep3_3 -= 0.5
+            in_session = False
 
         return [SlotSet("EP1_1", ep1_1), SlotSet("EP3_3", ep3_3)]
 
@@ -236,12 +270,20 @@ class ActionInitiation(Action):
         return "action_initiation"
 
     def run(self, dispatcher, tracker, domain):
+        global in_session
+        in_session = True
+
+        ep1_1 = tracker.get_slot("EP1_1")
+
+        if ep1_1 < 5:
+            ep1_1 += 0.5
+
         ep1_2 = tracker.get_slot("EP1_2")
 
         if ep1_2 < 5:
             ep1_2 += 1
 
-        return [SlotSet("EP1_2", ep1_2)]
+        return [SlotSet("EP1_1", ep1_1), SlotSet("EP1_2", ep1_2)]
 
 
 class ActionNoInitiation(Action):
@@ -324,7 +366,8 @@ class ActionAnswerWhatIsPossible(Action):
         return "action_answer_whatispossible"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message(template="utter_answer_whatispossible")
+        dispatcher.utter_message("I can talk to you about whatever you'd like, or we could play something")
+        dispatcher.utter_message(pick_game(tracker))
 
         global question_asked
         question_asked = True

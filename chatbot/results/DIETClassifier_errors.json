@@ -1,0 +1,369 @@
+[
+  {
+    "text": "I'm georgia",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "georgia",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 4,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "georgia"
+      }
+    ]
+  },
+  {
+    "text": "i'm from Manchester, United Kingdom",
+    "entities": [
+      {
+        "start": 9,
+        "end": 35,
+        "value": "Manchester, United Kingdom",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 9,
+        "end": 27,
+        "extractor": "DIETClassifier",
+        "value": "Manchester, United"
+      }
+    ]
+  },
+  {
+    "text": "I live in Broadway in the cotswolds",
+    "entities": [
+      {
+        "start": 10,
+        "end": 18,
+        "value": "Broadway",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 10,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "Broadway"
+      },
+      {
+        "entity": "location",
+        "start": 22,
+        "end": 35,
+        "extractor": "DIETClassifier",
+        "value": "the cotswolds"
+      }
+    ]
+  },
+  {
+    "text": "I'm Will",
+    "entities": [
+      {
+        "start": 4,
+        "end": 8,
+        "value": "Will",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I live in the cotswolds",
+    "entities": [
+      {
+        "start": 10,
+        "end": 23,
+        "value": "the cotswolds",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bidford",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Bidford",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "Bidford"
+      }
+    ]
+  },
+  {
+    "text": "I live in Mappleborough Green, Redditch",
+    "entities": [
+      {
+        "start": 10,
+        "end": 39,
+        "value": "Mappleborough Green, Redditch",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 10,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "Mappleborough"
+      },
+      {
+        "entity": "location",
+        "start": 29,
+        "end": 39,
+        "extractor": "DIETClassifier",
+        "value": ", Redditch"
+      }
+    ]
+  },
+  {
+    "text": "I was born in Redditch, Worcestershire",
+    "entities": [
+      {
+        "start": 14,
+        "end": 38,
+        "value": "Redditch, Worcestershire",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 14,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "Redditch,"
+      }
+    ]
+  },
+  {
+    "text": "call me bill",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "bill",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm from Malvern near Worcester",
+    "entities": [
+      {
+        "start": 9,
+        "end": 16,
+        "value": "Malvern",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 9,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "Malvern"
+      },
+      {
+        "entity": "location",
+        "start": 22,
+        "end": 31,
+        "extractor": "DIETClassifier",
+        "value": "Worcester"
+      }
+    ]
+  },
+  {
+    "text": "Stratford-upon-Avon",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Stratford-upon-Avon",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 0,
+        "end": 9,
+        "extractor": "DIETClassifier",
+        "value": "Stratford"
+      },
+      {
+        "entity": "location",
+        "start": 15,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "Avon"
+      }
+    ]
+  },
+  {
+    "text": "I' from Taunton, Somerset",
+    "entities": [
+      {
+        "start": 8,
+        "end": 25,
+        "value": "Taunton, Somerset",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 15,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": ", Somerset"
+      }
+    ]
+  },
+  {
+    "text": "Bourton-on-the-Water",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "Bourton-on-the-Water",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "Bourton"
+      }
+    ]
+  },
+  {
+    "text": "zara",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "zara",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Royal Leamington Spa",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "Royal Leamington Spa",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 0,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "Royal Leamington"
+      },
+      {
+        "entity": "name",
+        "start": 17,
+        "end": 20,
+        "extractor": "DIETClassifier",
+        "value": "Spa"
+      }
+    ]
+  },
+  {
+    "text": "uh-huh",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 2,
+        "end": 3,
+        "extractor": "DIETClassifier",
+        "value": "-"
+      }
+    ]
+  },
+  {
+    "text": "Fiona Jacobson",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Fiona Jacobson",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 5,
+        "extractor": "DIETClassifier",
+        "value": "Fiona"
+      },
+      {
+        "entity": "location",
+        "start": 6,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "Jacobson"
+      }
+    ]
+  },
+  {
+    "text": "call me John",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "John",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm from Astwood Bank",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "Astwood Bank",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

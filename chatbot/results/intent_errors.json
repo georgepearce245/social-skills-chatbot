@@ -1,0 +1,938 @@
+[
+  {
+    "text": "absolutely",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.3422187566757202
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.3703908324241638
+    }
+  },
+  {
+    "text": "nice",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodtomeetyou",
+      "confidence": 0.23110699653625488
+    }
+  },
+  {
+    "text": "yas",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.29347431659698486
+    }
+  },
+  {
+    "text": "i like you",
+    "intent": "compliment",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4980112612247467
+    }
+  },
+  {
+    "text": "you are smart",
+    "intent": "compliment",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.3007737100124359
+    }
+  },
+  {
+    "text": "I'm not sure",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.399802029132843
+    }
+  },
+  {
+    "text": "wonderful",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "ask_whoami",
+      "confidence": 0.1935989260673523
+    }
+  },
+  {
+    "text": "that is good",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4205670654773712
+    }
+  },
+  {
+    "text": "that's good",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.6326192617416382
+    }
+  },
+  {
+    "text": "that's great",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7126116752624512
+    }
+  },
+  {
+    "text": "not good",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.8921406269073486
+    }
+  },
+  {
+    "text": "thank you",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7319258451461792
+    }
+  },
+  {
+    "text": "thank u",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7598007321357727
+    }
+  },
+  {
+    "text": "thanks for the help",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "ask_whatispossible",
+      "confidence": 0.8214437961578369
+    }
+  },
+  {
+    "text": "are you happy",
+    "intent": "ask_howdoing",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6937218904495239
+    }
+  },
+  {
+    "text": "Are you happy?",
+    "intent": "ask_howdoing",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.39483851194381714
+    }
+  },
+  {
+    "text": "what is my name?",
+    "intent": "ask_whatismyname",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.8585742115974426
+    }
+  },
+  {
+    "text": "can you explain what you do?",
+    "intent": "ask_whatispossible",
+    "intent_prediction": {
+      "name": "explain",
+      "confidence": 0.8313711881637573
+    }
+  },
+  {
+    "text": "what next?",
+    "intent": "ask_whatispossible",
+    "intent_prediction": {
+      "name": "explain",
+      "confidence": 0.7151576280593872
+    }
+  },
+  {
+    "text": "what name do you go by?",
+    "intent": "ask_whatisyourname",
+    "intent_prediction": {
+      "name": "ask_whatismyname",
+      "confidence": 0.9609782099723816
+    }
+  },
+  {
+    "text": "may I know your name",
+    "intent": "ask_whatisyourname",
+    "intent_prediction": {
+      "name": "ask_whatismyname",
+      "confidence": 0.9621249437332153
+    }
+  },
+  {
+    "text": "what's the name of the place you came from?",
+    "intent": "ask_wherefrom",
+    "intent_prediction": {
+      "name": "ask_whatismyname",
+      "confidence": 0.6965504884719849
+    }
+  },
+  {
+    "text": "who am I?",
+    "intent": "ask_whoami",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.9157161712646484
+    }
+  },
+  {
+    "text": "what do you mean",
+    "intent": "explain",
+    "intent_prediction": {
+      "name": "dont_understand",
+      "confidence": 0.6005896925926208
+    }
+  },
+  {
+    "text": "I'm good thanks. How are you?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.989477276802063
+    }
+  },
+  {
+    "text": "k",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.6599360108375549
+    }
+  },
+  {
+    "text": "please",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.4010511338710785
+    }
+  },
+  {
+    "text": "I'm afraid not",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.31087350845336914
+    }
+  },
+  {
+    "text": "Talk to you again soon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "goodtoseeyou",
+      "confidence": 0.7297626733779907
+    }
+  },
+  {
+    "text": "I'm Will",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8051641583442688
+    }
+  },
+  {
+    "text": "damn you",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.9017608165740967
+    }
+  },
+  {
+    "text": "get lost",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "goodtomeetyou",
+      "confidence": 0.49344366788864136
+    }
+  },
+  {
+    "text": "shut up",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.32076844573020935
+    }
+  },
+  {
+    "text": "perfect",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4540731906890869
+    }
+  },
+  {
+    "text": "ok thanks",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.9171298742294312
+    }
+  },
+  {
+    "text": "I'm unhappy",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7731359601020813
+    }
+  },
+  {
+    "text": "this is great",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7610946297645569
+    }
+  },
+  {
+    "text": "this is nice",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5075989961624146
+    }
+  },
+  {
+    "text": "wow",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.3909444510936737
+    }
+  },
+  {
+    "text": "what am I called?",
+    "intent": "ask_whatismyname",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.7902510762214661
+    }
+  },
+  {
+    "text": "you are?",
+    "intent": "ask_whatisyourname",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.8643592000007629
+    }
+  },
+  {
+    "text": "what is your birthplace?",
+    "intent": "ask_wherefrom",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.27237948775291443
+    }
+  },
+  {
+    "text": "I don't know where",
+    "intent": "ask_whereisthat",
+    "intent_prediction": {
+      "name": "dont_understand",
+      "confidence": 0.40021565556526184
+    }
+  },
+  {
+    "text": "give me more information",
+    "intent": "explain",
+    "intent_prediction": {
+      "name": "ask_whatispossible",
+      "confidence": 0.7628265619277954
+    }
+  },
+  {
+    "text": "I want more information",
+    "intent": "explain",
+    "intent_prediction": {
+      "name": "ask_whatispossible",
+      "confidence": 0.9818294048309326
+    }
+  },
+  {
+    "text": "that is great",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.9206823706626892
+    }
+  },
+  {
+    "text": "not really",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.8698770403862
+    }
+  },
+  {
+    "text": "not yet",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.6346052885055542
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_wherefrom",
+      "confidence": 0.3450901210308075
+    }
+  },
+  {
+    "text": "it's great to get to know you",
+    "intent": "goodtomeetyou",
+    "intent_prediction": {
+      "name": "goodtoseeyou",
+      "confidence": 0.5942156910896301
+    }
+  },
+  {
+    "text": "I' from Taunton, Somerset",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3210323452949524
+    }
+  },
+  {
+    "text": "Bourton-on-the-Water",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "ask_whatispossible",
+      "confidence": 0.2691882848739624
+    }
+  },
+  {
+    "text": "F u",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6849897503852844
+    }
+  },
+  {
+    "text": "I hate you",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "ask_whatismyname",
+      "confidence": 0.2983318269252777
+    }
+  },
+  {
+    "text": "you lack understanding",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "dont_understand",
+      "confidence": 0.4069910943508148
+    }
+  },
+  {
+    "text": "I am great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7490236163139343
+    }
+  },
+  {
+    "text": "bad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.5835905075073242
+    }
+  },
+  {
+    "text": "oh no",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9943351745605469
+    }
+  },
+  {
+    "text": "great, thanks",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.49572446942329407
+    }
+  },
+  {
+    "text": "ok thanks",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9808369278907776
+    }
+  },
+  {
+    "text": "is everything ok",
+    "intent": "ask_howdoing",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8846246600151062
+    }
+  },
+  {
+    "text": "Is everything ok?",
+    "intent": "ask_howdoing",
+    "intent_prediction": {
+      "name": "greet+ask_howdoing",
+      "confidence": 0.5352518558502197
+    }
+  },
+  {
+    "text": "say my name",
+    "intent": "ask_whatismyname",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.3364982604980469
+    }
+  },
+  {
+    "text": "can you help me?",
+    "intent": "ask_whatispossible",
+    "intent_prediction": {
+      "name": "ask_whoami",
+      "confidence": 0.32738548517227173
+    }
+  },
+  {
+    "text": "more info",
+    "intent": "ask_whatispossible",
+    "intent_prediction": {
+      "name": "explain",
+      "confidence": 0.9004570841789246
+    }
+  },
+  {
+    "text": "where do you live?",
+    "intent": "ask_wherefrom",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.3598521947860718
+    }
+  },
+  {
+    "text": "go ahead",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.3237704634666443
+    }
+  },
+  {
+    "text": "let's do it",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_whoami",
+      "confidence": 0.5065119862556458
+    }
+  },
+  {
+    "text": "very much",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.28475630283355713
+    }
+  },
+  {
+    "text": "Ah that's nice",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.8103951215744019
+    }
+  },
+  {
+    "text": "absolute not",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.6105611324310303
+    }
+  },
+  {
+    "text": "see you",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "goodtoseeyou",
+      "confidence": 0.8276218175888062
+    }
+  },
+  {
+    "text": "good night",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.41162747144699097
+    }
+  },
+  {
+    "text": "my name's sara",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "ask_whatismyname",
+      "confidence": 0.5905621647834778
+    }
+  },
+  {
+    "text": "zara",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.42718395590782166
+    }
+  },
+  {
+    "text": "you are dumb",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.6721183657646179
+    }
+  },
+  {
+    "text": "you know nothing",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "ask_whoami",
+      "confidence": 0.3741273581981659
+    }
+  },
+  {
+    "text": "not good",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.9853564500808716
+    }
+  },
+  {
+    "text": "ha ha",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8835465908050537
+    }
+  },
+  {
+    "text": "hehe",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.26704761385917664
+    }
+  },
+  {
+    "text": "that is great",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5050930976867676
+    }
+  },
+  {
+    "text": "damn",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.9654130935668945
+    }
+  },
+  {
+    "text": "you are mad",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.4557979106903076
+    }
+  },
+  {
+    "text": "yes thanks",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.42379841208457947
+    }
+  },
+  {
+    "text": "good, you",
+    "intent": "ask_howdoing",
+    "intent_prediction": {
+      "name": "greet+ask_howdoing",
+      "confidence": 0.46065396070480347
+    }
+  },
+  {
+    "text": "do you know my name?",
+    "intent": "ask_whatismyname",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.9085528254508972
+    }
+  },
+  {
+    "text": "do you know what I'm called?",
+    "intent": "ask_whatismyname",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.7593868970870972
+    }
+  },
+  {
+    "text": "what's your name",
+    "intent": "ask_whatisyourname",
+    "intent_prediction": {
+      "name": "ask_whatismyname",
+      "confidence": 0.6019284725189209
+    }
+  },
+  {
+    "text": "where were you born?",
+    "intent": "ask_wherefrom",
+    "intent_prediction": {
+      "name": "ask_whereisthat",
+      "confidence": 0.47369030117988586
+    }
+  },
+  {
+    "text": "can you tell me who I am?",
+    "intent": "ask_whoami",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.529333770275116
+    }
+  },
+  {
+    "text": "can you explain",
+    "intent": "explain",
+    "intent_prediction": {
+      "name": "ask_whatispossible",
+      "confidence": 0.5799988508224487
+    }
+  },
+  {
+    "text": "how come?",
+    "intent": "explain",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.9543523788452148
+    }
+  },
+  {
+    "text": "I do",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "dont_understand",
+      "confidence": 0.32763922214508057
+    }
+  },
+  {
+    "text": "awesome",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.4021698534488678
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.29308071732521057
+    }
+  },
+  {
+    "text": "go for it",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.6259036064147949
+    }
+  },
+  {
+    "text": "that's great",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.9443241953849792
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3077240586280823
+    }
+  },
+  {
+    "text": "I'm not sure what you mean",
+    "intent": "dont_understand",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5951814651489258
+    }
+  },
+  {
+    "text": "great seeing you",
+    "intent": "goodtoseeyou",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5636565685272217
+    }
+  },
+  {
+    "text": "I'm from Astwood Bank",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.2449783980846405
+    }
+  },
+  {
+    "text": "go away",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.6989328861236572
+    }
+  },
+  {
+    "text": "go to hell",
+    "intent": "insult",
+    "intent_prediction": {
+      "name": "goodtoseeyou",
+      "confidence": 0.35406091809272766
+    }
+  },
+  {
+    "text": "very good",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.4220552146434784
+    }
+  },
+  {
+    "text": "great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "react_positive",
+      "confidence": 0.5364041924476624
+    }
+  },
+  {
+    "text": "awful",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.2649664282798767
+    }
+  },
+  {
+    "text": "terrible",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.2629235088825226
+    }
+  },
+  {
+    "text": "I'm bored",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.44422635436058044
+    }
+  },
+  {
+    "text": "lol",
+    "intent": "react_positive",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.35560178756713867
+    }
+  },
+  {
+    "text": "I don't care",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9755056500434875
+    }
+  },
+  {
+    "text": "shit",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "insult",
+      "confidence": 0.6145524978637695
+    }
+  },
+  {
+    "text": "you are rude",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "compliment",
+      "confidence": 0.6183777451515198
+    }
+  },
+  {
+    "text": "cheers",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5712740421295166
+    }
+  },
+  {
+    "text": "what name do I go by?",
+    "intent": "ask_whatismyname",
+    "intent_prediction": {
+      "name": "ask_whatisyourname",
+      "confidence": 0.9361873865127563
+    }
+  },
+  {
+    "text": "what do you do?",
+    "intent": "ask_whatispossible",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.3363424241542816
+    }
+  },
+  {
+    "text": "what are you for?",
+    "intent": "ask_whatispossible",
+    "intent_prediction": {
+      "name": "ask_wherefrom",
+      "confidence": 0.2699083685874939
+    }
+  }
+]

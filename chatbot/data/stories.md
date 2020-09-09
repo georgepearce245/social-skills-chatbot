@@ -472,3 +472,46 @@
     - slot{"EP3_1": 2.5}
     - slot{"EP3_3": 3.5}
     - slot{"EP2_2": 5.0}
+
+## interactive_story_1
+* greet
+    - action_utter_greet
+
+## interactive_story_1
+* greet
+    - action_utter_greet
+    - slot{"EP2_1": 4.0}
+    - utter_ask_howdoing
+
+## interactive_story_1
+* greet
+    - action_utter_greet
+    - slot{"EP2_1": 4.0}
+    - utter_ask_howdoing
+* ask_howdoing
+    - action_answer_howdoing
+    - slot{"EP3_1": 2.5}
+    - slot{"EP3_3": 3.0}
+* ask_whatisyourname
+    - action_answer_whatisyourname
+    - slot{"EP3_1": 3.0}
+    - action_ask_whatisyourname
+* inform{"name": "george"}
+    - slot{"name": "george"}
+    - action_user_inform
+    - slot{"EP3_3": 4.0}
+    - action_utter_goodtomeetyou
+    - utter_ask_wherefrom
+* inform{"location": "redditch"}
+    - slot{"location": "redditch"}
+    - action_user_inform
+    - slot{"EP3_3": 5.0}
+    - action_user_mood_great
+    - slot{"EP3_3": 5.0}
+* explain
+    - action_answer_explain
+    - slot{"EP3_1": 3.5}
+    - slot{"EP3_3": 5.0}
+* affirm
+    - action_user_affirm
+    - slot{"EP3_3": 5.0}

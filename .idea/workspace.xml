@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c7d6064-ebab-403f-b5ee-0f1c8f2f42ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/nlu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/data/stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/story_graph.dot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
       <workItem from="1597833109958" duration="1169000" />
       <workItem from="1597847379379" duration="19085000" />
       <workItem from="1598275789771" duration="3621000" />
-      <workItem from="1599395016257" duration="19396000" />
+      <workItem from="1599395016257" duration="20763000" />
     </task>
     <servers />
   </component>

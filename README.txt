@@ -1,6 +1,6 @@
-## My undergraduate final year project: "An AI Chatbot To Help Autistic Children Develop Their Social Skills"
+My undergraduate final year project: "An AI Chatbot To Help Autistic Children Develop Their Social Skills"
 
-### Feel free to look through my final report for a more detailed walkthrough of the project, or continue reading here for a very brief summary.
+Feel free to look through my final report for a more detailed walkthrough of the project, or continue reading here for a very brief summary.
 
 The project consists of two main components, a chatbot built using Rasa Open Source, and a Django web application through which the user would interact with the chatbot. 
 

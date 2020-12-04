@@ -1,41 +1,9 @@
-The project is split into two parts within the project directory.
-The chatbot/ directory contains the Rasa chatbot. The djangoproject/ directory contains the Django web application
+## My undergraduate final year project: "An AI Chatbot To Help Autistic Children Develop Their Social Skills"
 
-The chatbot training data can be found in the chatbot/data/ directory
-The chatbot testing results can be found in the chatbot/results/ directory
+### Feel free to look through my final report for a more detailed walkthrough of the project, or continue reading here for a very brief summary.
 
-The web application html can be found in the djangoproject/webapp/templates/webapp/ directory
-The web application css can be found in the djangoproject/webapp/static/css/ directory
-The web application javascript can be found in the djangoproject/webapp/static/js/ directory
+The project consists of two main components, a chatbot built using Rasa Open Source, and a Django web application through which the user would interact with the chatbot. 
 
+The web app is a simple, messenger-style application which will send user messages to the chatbot and display the chatbot's response.
 
-The project requires:
-Python: 3.8.5
-Django: 3.1
-Rasa: 1.8.0
-
-Python can be downloaded here: https://www.python.org/downloads/release/python-385/
-Django can be downloaded here: https://www.djangoproject.com/download/
-Installation instructions for Rasa can be found here: https://rasa.com/docs/rasa/1.8.0/user-guide/installation/
-
-
-To run the chatbot, three terminal windows must be open simultaneously.
-
-In the first terminal, navigate to the chatbot/ directory and run the following command:
-rasa run -m models --enable-api --cors "*" --debug
-
-The --debug flag will allow you to see what's going on behind-the-scenes, but could be omitted if you like
-
-This command runs the Rasa server and takes several seconds.
-When in DEBUG mode, the line following line will indicate that the server is ready to go:
-DEBUG    rasa.core.nlg.generator  - Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
-
-When the Rasa server is running, open a second terminal, navigate to the chatbot/ directory and enter:
-rasa run actions
-
-This command will start the actions server and should take a second or two.
-
-Finally, open a third terminal, navigate to the djangoproject/ directory and run:
-python3 manage.py runserver
-
-The chatbot will then be up and running at http://127.0.0.1:8000/webapp/
+The chatbot would be intended for use with a very young autistic user, with extremely limited competency of neurotypical social skills. It is therefore capable of having very basic 'small talk' and determining the user's level of ability for several very fundamental 'social skills'. The chatbot keeps track of these scores as the conversation progresses, and tailors the conversation somewhat to try to help the child improve them. This tailoring could take the form of prompts, examples, or suggested 'games' or educational material.

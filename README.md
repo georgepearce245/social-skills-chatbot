@@ -1,5 +1,5 @@
-## My undergraduate final year project: 
 ## "An AI Chatbot To Help Autistic Children Develop Their Social Skills"
+### My undergraduate final year project
 
 ### Feel free to look through my final report for a more detailed walkthrough of the project, or continue reading here for a very brief summary.
 

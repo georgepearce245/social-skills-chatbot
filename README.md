@@ -9,4 +9,4 @@ The web app is a simple, messenger-style application which will send user messag
 The chatbot would be intended for use with a very young autistic user, with extremely limited competency of neurotypical social skills. It is therefore capable of having very basic 'small talk' and determining the user's level of ability for several very fundamental 'social skills'. The chatbot keeps track of these scores as the conversation progresses, and tailors the conversation somewhat to try to help the child improve them. This tailoring could take the form of prompts, examples, or suggested 'games' or educational material.
 
 A basic example conversation:
-![](https://github.com/georgepearce245/social-skills-chatbot/conversation.png)
+![conversation](https://github.com/georgepearce245/social-skills-chatbot/blob/main/conversation.png)
